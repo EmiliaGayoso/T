@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" asp-append-version="true" />
-
-    <script src="function.js" asp-append-version="true"></script>
-    
-    <title>TO DO LIST</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
-        <input type="text" class="ingresoTask" id="ingreso">
-        <button type="button" class="btn btn-success" onclick="AgregarEvento('ingreso')">✓</button>
-    </form>
-    
-    <ul class="list-group" id="listaEventos">
+    <script src="funtion.js"></script>
+    <section>
+        <h2 id="titulo">TO DO LIST</h2>
+        <div>
+            <input type="text" id="todo">
+            <button onclick="AgregarEvento(document.querySelector('#todo').value)" id="mas">+</button>
+        </div>
+        <ul id="array">
         
-    </ul>
+        </ul>
+        <div id="calcular">
+            <button onclick="CalcularTareaMasRapida()" id="boton-calcular">Tarea + rápida en realizarse</button>
+        </div>
+    </section>
     
 </body>
 </html>

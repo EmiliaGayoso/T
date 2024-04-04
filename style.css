@@ -1,3 +1,63 @@
-.underline{
-    text-decoration: line-through
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 50%;
+    height: 30%;
+    background-color: aqua;
+}
+
+.titulo {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 70%;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+label {
+    flex-grow: 1;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button[id^="mas"] {
+    margin-left: 5px;
+    padding: 3px;
+}
+
+button[id^="boton-calcular"] {
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
 }
